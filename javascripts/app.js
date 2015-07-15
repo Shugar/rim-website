@@ -92,6 +92,7 @@
 })();
 require.register("initialize", function(exports, require, module) {
 $(document).ready(function() {
+  var timeOut, timeOut1, x;
   $('.login').hide();
   $('.close').click(function() {
     return $('.login').hide();
@@ -99,16 +100,26 @@ $(document).ready(function() {
   $('.lk').click(function() {
     return $('.login').show();
   });
-  return $('.coins-gallery').slick({
+  $('.coins-gallery').slick({
     dots: false,
     arrows: false,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
     speed: 1500,
     slidesToShow: 4,
-    variableWidth: true
+    variableWidth: true,
+    swipe: false,
+    pauseOnHover: true
   });
+  timeOut = null;
+  timeOut1 = null;
+  return x = setInterval(function() {
+    timeOut = setTimeout(function() {
+      return $($('.coins-gallery')[0]).slick('slickNext');
+    }, Math.random() * 4000);
+    return timeOut1 = setTimeout(function() {
+      return $($('.coins-gallery')[1]).slick('slickNext');
+    }, Math.random() * 6000);
+  }, 2500);
 });
 });
 

@@ -319,6 +319,9 @@
     color: black;
 }
 
+hr {
+  margin: 25px 0; }
+
 .footer {
   height: 88px;
   position: relative;
@@ -371,6 +374,9 @@
         .footer .footer-inner .right a:hover {
           border-bottom: 1px #fff solid;
           color: #fff; }
+
+hr {
+  margin: 25px 0; }
 
 .header {
   font-family: "Calibri", sans-serif;
@@ -577,6 +583,9 @@
       background: url("../images/line-2.png") no-repeat 50% 100%;
       background-size: cover; }
 
+.title {
+  padding: 10px 0 0 0; }
+
 .auction-now, .auction-end {
   position: relative; }
   .auction-now .info, .auction-end .info {
@@ -596,13 +605,15 @@
         color: #000;
         font-weight: bold;
         margin-left: 12px;
-        line-height: 40px; }
+        line-height: 47px;
+        letter-spacing: 0.8px; }
       .auction-now .info .background p, .auction-end .info .background p {
         font-size: 15px;
         font-style: italic;
-        margin-top: 5px;
-        margin-left: 12px;
-        text-shadow: 1px 1px 2px #fff; }
+        margin-top: 0px;
+        margin-left: 11px;
+        text-shadow: 1px 1px 2px #fff;
+        line-height: 19px; }
         .auction-now .info .background p:first-child, .auction-end .info .background p:first-child {
           margin-top: 0; }
   .auction-now .coins-gallery, .auction-end .coins-gallery {
@@ -638,33 +649,136 @@
     width: 144px; }
     .auction-now .more-button a, .auction-end .more-button a {
       position: absolute;
-      left: 50%;
-      top: 50%;
+      left: 34%;
+      top: 47%;
       color: #000;
       transform: translateX(-50%, -50%);
       text-decoration: none; }
       .auction-now .more-button a:hover, .auction-end .more-button a:hover {
         text-decoration: underline; }
 
-.auction-end .info .background {
-  background: url("../images/rect.png") no-repeat; }
+.auction-now {
+  margin-top: 6px; }
+
+.auction-end {
+  margin-top: 4px; }
+  .auction-end .info .background {
+    background: url("../images/rect.png") no-repeat; }
+
+.news-container {
+  margin-top: 13px;
+  margin-bottom: 13px; }
+  .news-container .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 285px;
+    margin-left: 38px; }
+    .news-container .item:first-child {
+      margin-left: 10px; }
+    .news-container .item .title-inner {
+      font-size: 16px;
+      font-weight: 700; }
+    .news-container .item .text {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 21px;
+      font-style: italic; }
+
+.auction-end-without-slider {
+  margin-top: 25px; }
+  .auction-end-without-slider .item {
+    height: 180px;
+    width: 205px;
+    background: url("../images/rect.png") no-repeat;
+    height: 180px;
+    width: 205px;
+    display: inline-block;
+    margin-left: 43px;
+    vertical-align: top; }
+    .auction-end-without-slider .item:first-child {
+      margin-left: 0; }
+    .auction-end-without-slider .item .title {
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+      margin-left: 12px;
+      line-height: 40px; }
+    .auction-end-without-slider .item p {
+      font-size: 15px;
+      font-style: italic;
+      margin-top: 5px;
+      margin-left: 12px;
+      text-shadow: 1px 1px 2px #fff; }
+      .auction-end-without-slider .item p:first-child {
+        margin-top: 0; }
+
+.online-shop .item {
+  margin: 19px 0 5px 37px;
+  display: inline-block;
+  vertical-align: top;
+  width: 278px;
+  border: 2px solid #e68400;
+  height: 209px;
+  text-align: center;
+  position: relative; }
+  .online-shop .item:first-child {
+    margin-left: 17px; }
+  .online-shop .item img {
+    display: block;
+    margin: 0 auto;
+    height: 105px;
+    margin-top: 10px; }
+  .online-shop .item .title {
+    text-decoration: underline;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000; }
+  .online-shop .item .text {
+    margin-top: 2px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    font-style: italic;
+    font-size: 13px; }
+  .online-shop .item .price {
+    position: absolute;
+    bottom: 8px;
+    left: 22px;
+    font-size: 14px;
+    color: red; }
+  .online-shop .item .more {
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    bottom: 8px;
+    right: 13px; }
+    .online-shop .item .more:hover {
+      color: #feb22f; }
+
+.title-news, .title-end {
+  margin-top: 7px; }
+
+.title-last {
+  margin-top: 10px; }
 
 body {
-  min-width: 1020px; }
+  min-width: 1200px; }
 
 .container {
   width: 960px;
   position: relative;
   margin: 0 auto; }
 
+hr {
+  margin: 0; }
+
 .content {
-  margin-top: 31px; }
+  margin-top: 20px; }
   .content .container {
     font-family: "Calibri", sans-serif; }
     .content .container .title {
       font-size: 22px;
-      color: #d60000;
-      letter-spacing: 0.4px;
+      color: #FF0000;
+      letter-spacing: 0.1px;
       margin-left: 0; }
     .content .container .info-reg p {
       margin-left: 12px;
@@ -719,7 +833,7 @@ body {
       display: block;
       margin: 0 auto;
       margin-left: 500px;
-      margin-top: 25px;
+      margin-top: 10px;
       margin-bottom: 25px;
       width: 180px;
       height: 30px;
@@ -740,8 +854,6 @@ body {
   font-family: "Calibri", sans-serif;
   border-top: 3px #feb22f solid;
   margin-top: 25px;
-  max-width: 100%;
-  min-width: 1280px;
   height: 283px;
   overflow: auto;
   background: #fff;
@@ -749,8 +861,11 @@ body {
   background: linear-gradient(#fffbda, #fff); }
   .static-text p {
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 28px;
     line-height: 18px; }
+    .static-text p:first-child {
+      margin-top: 13px;
+      line-height: 20px; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -802,12 +917,15 @@ table {
 }
 
 body {
-  min-width: 1020px; }
+  min-width: 1200px; }
 
 .container {
   width: 960px;
   position: relative;
   margin: 0 auto; }
+
+hr {
+  margin: 0; }
 
 .header {
   font-family: "Calibri", sans-serif;
@@ -1068,13 +1186,13 @@ body {
           color: #fff; }
 
 .content {
-  margin-top: 31px; }
+  margin-top: 20px; }
   .content .container {
     font-family: "Calibri", sans-serif; }
     .content .container .title {
       font-size: 22px;
-      color: #d60000;
-      letter-spacing: 0.4px;
+      color: #FF0000;
+      letter-spacing: 0.1px;
       margin-left: 0; }
     .content .container .info-reg p {
       margin-left: 12px;
@@ -1129,7 +1247,7 @@ body {
       display: block;
       margin: 0 auto;
       margin-left: 500px;
-      margin-top: 25px;
+      margin-top: 10px;
       margin-bottom: 25px;
       width: 180px;
       height: 30px;
@@ -1150,8 +1268,6 @@ body {
   font-family: "Calibri", sans-serif;
   border-top: 3px #feb22f solid;
   margin-top: 25px;
-  max-width: 100%;
-  min-width: 1280px;
   height: 283px;
   overflow: auto;
   background: #fff;
@@ -1159,8 +1275,14 @@ body {
   background: linear-gradient(#fffbda, #fff); }
   .static-text p {
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 28px;
     line-height: 18px; }
+    .static-text p:first-child {
+      margin-top: 13px;
+      line-height: 20px; }
+
+.title {
+  padding: 10px 0 0 0; }
 
 .auction-now, .auction-end {
   position: relative; }
@@ -1181,13 +1303,15 @@ body {
         color: #000;
         font-weight: bold;
         margin-left: 12px;
-        line-height: 40px; }
+        line-height: 47px;
+        letter-spacing: 0.8px; }
       .auction-now .info .background p, .auction-end .info .background p {
         font-size: 15px;
         font-style: italic;
-        margin-top: 5px;
-        margin-left: 12px;
-        text-shadow: 1px 1px 2px #fff; }
+        margin-top: 0px;
+        margin-left: 11px;
+        text-shadow: 1px 1px 2px #fff;
+        line-height: 19px; }
         .auction-now .info .background p:first-child, .auction-end .info .background p:first-child {
           margin-top: 0; }
   .auction-now .coins-gallery, .auction-end .coins-gallery {
@@ -1223,16 +1347,116 @@ body {
     width: 144px; }
     .auction-now .more-button a, .auction-end .more-button a {
       position: absolute;
-      left: 50%;
-      top: 50%;
+      left: 34%;
+      top: 47%;
       color: #000;
       transform: translateX(-50%, -50%);
       text-decoration: none; }
       .auction-now .more-button a:hover, .auction-end .more-button a:hover {
         text-decoration: underline; }
 
-.auction-end .info .background {
-  background: url("../images/rect.png") no-repeat; }
+.auction-now {
+  margin-top: 6px; }
+
+.auction-end {
+  margin-top: 4px; }
+  .auction-end .info .background {
+    background: url("../images/rect.png") no-repeat; }
+
+.news-container {
+  margin-top: 13px;
+  margin-bottom: 13px; }
+  .news-container .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 285px;
+    margin-left: 38px; }
+    .news-container .item:first-child {
+      margin-left: 10px; }
+    .news-container .item .title-inner {
+      font-size: 16px;
+      font-weight: 700; }
+    .news-container .item .text {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 21px;
+      font-style: italic; }
+
+.auction-end-without-slider {
+  margin-top: 25px; }
+  .auction-end-without-slider .item {
+    height: 180px;
+    width: 205px;
+    background: url("../images/rect.png") no-repeat;
+    height: 180px;
+    width: 205px;
+    display: inline-block;
+    margin-left: 43px;
+    vertical-align: top; }
+    .auction-end-without-slider .item:first-child {
+      margin-left: 0; }
+    .auction-end-without-slider .item .title {
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+      margin-left: 12px;
+      line-height: 40px; }
+    .auction-end-without-slider .item p {
+      font-size: 15px;
+      font-style: italic;
+      margin-top: 5px;
+      margin-left: 12px;
+      text-shadow: 1px 1px 2px #fff; }
+      .auction-end-without-slider .item p:first-child {
+        margin-top: 0; }
+
+.online-shop .item {
+  margin: 19px 0 5px 37px;
+  display: inline-block;
+  vertical-align: top;
+  width: 278px;
+  border: 2px solid #e68400;
+  height: 209px;
+  text-align: center;
+  position: relative; }
+  .online-shop .item:first-child {
+    margin-left: 17px; }
+  .online-shop .item img {
+    display: block;
+    margin: 0 auto;
+    height: 105px;
+    margin-top: 10px; }
+  .online-shop .item .title {
+    text-decoration: underline;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000; }
+  .online-shop .item .text {
+    margin-top: 2px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    font-style: italic;
+    font-size: 13px; }
+  .online-shop .item .price {
+    position: absolute;
+    bottom: 8px;
+    left: 22px;
+    font-size: 14px;
+    color: red; }
+  .online-shop .item .more {
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    bottom: 8px;
+    right: 13px; }
+    .online-shop .item .more:hover {
+      color: #feb22f; }
+
+.title-news, .title-end {
+  margin-top: 7px; }
+
+.title-last {
+  margin-top: 10px; }
 
 
 /*# sourceMappingURL=app.css.map*/
