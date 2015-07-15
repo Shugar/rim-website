@@ -1,0 +1,179 @@
+@import 'settings'
+
+.title
+  padding: 10px 0 0 0
+
+.auction-now, .auction-end
+  position: relative
+  .info
+    height: 200px
+    position: absolute
+    top: 25px
+    left: 0
+    z-index: 50
+    .background
+      background: url('../images/rect1.png') no-repeat
+      height: 180px
+      width: 205px
+      display: inline-block
+      vertical-align: top
+      .title
+        font-size: 15px
+        color: #000
+        font-weight: bold
+        margin-left: 12px
+        line-height: 47px
+        letter-spacing: 0.8px 
+      p
+        font-size: 15px
+        font-style: italic
+        margin-top: 0px
+        margin-left: 11px
+        text-shadow:  1px 1px 2px #fff
+        line-height: 19px
+
+        &:first-child
+          margin-top: 0
+  .coins-gallery
+    margin-top: 25px
+    vertical-align: top
+    display: inline-block
+    width: 960px
+    .item
+      width: 150px
+      padding: 0 40px
+      outline: none
+      img
+        display: block
+        margin: 0 auto
+      .description
+        text-align: center
+        font-size: 14px
+        margin-top: 10px
+        line-height: 18px
+        color: #000
+        text-decoration: none
+        display: block
+        &:hover
+          text-decoration: underline
+  .more-button
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 50
+    background: url('../images/shadow.png') no-repeat center
+    height: 197px
+    font-weight: bold
+    width: 144px
+    a 
+      position: absolute
+      left: 34%
+      top: 47%
+      color: #000
+      transform: translateX(-50%, -50%)
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+.auction-now 
+  margin-top: 6px
+.auction-end
+  margin-top: 4px
+  .info
+    .background
+      background: url('../images/rect.png') no-repeat
+
+.news-container
+  margin-top: 13px
+  margin-bottom: 13px
+  .item
+    display: inline-block
+    vertical-align: top
+    width: 285px
+    margin-left: 38px
+    &:first-child
+      margin-left: 10px
+    .title-inner
+      font-size: 16px
+      font-weight: 700
+    .text 
+      margin-top: 10px
+      font-size: 14px
+      line-height: 21px
+      font-style: italic
+
+.auction-end-without-slider
+  margin-top: 25px
+  .item
+    height: 180px
+    width: 205px
+    background: url('../images/rect.png') no-repeat
+    height: 180px
+    width: 205px
+    display: inline-block
+    margin-left: 43px
+    vertical-align: top
+    &:first-child
+      margin-left: 0
+    .title
+      font-size: 15px
+      color: #000
+      font-weight: bold
+      margin-left: 12px
+      line-height: 40px
+    p
+      font-size: 15px
+      font-style: italic
+      margin-top: 5px
+      margin-left: 12px
+      text-shadow:  1px 1px 2px #fff
+      &:first-child
+        margin-top: 0
+
+.online-shop
+  .item
+    margin: 19px 0 5px 37px
+    display: inline-block
+    vertical-align: top
+    width: 278px
+    border: 2px solid #e68400
+    height: 209px
+    text-align: center
+    position: relative
+    &:first-child
+      margin-left: 17px
+    img
+      display: block
+      margin: 0 auto
+      height: 105px
+      margin-top: 10px
+    .title
+      text-decoration: underline
+      font-size: 14px
+      letter-spacing: 0px
+      color: #000
+    .text
+      margin-top: 2px
+      line-height: 20px 
+      letter-spacing: 0.3px
+      font-style: italic
+      font-size: 13px 
+    .price
+      position: absolute
+      bottom: 8px
+      left: 22px
+      font-size: 14px
+      color: red
+    .more
+      font-size: 14px
+      color: #000
+      position: absolute
+      bottom: 8px
+      right: 13px
+      &:hover
+        color: $orange
+
+.title-news, .title-end
+  margin-top: 7px
+
+.title-last
+  margin-top: 10px

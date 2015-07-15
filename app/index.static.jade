@@ -1,0 +1,186 @@
+doctype html
+head
+  meta(name="viewport" content="width=device-width")
+
+  link(rel="stylesheet" href="stylesheets/app.css")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
+
+body
+  include modules/_header.jade 
+  .content
+    .container
+      p.title Текущие аукционы:
+      .auction-now
+        .info
+          .background
+            a(href="").title Аукцион №6
+            p Лотов:
+              span 55
+            p Открытие: 
+              span 18.05.2015
+            p Закрытие: 
+              span 21.05.2015 
+            p Редкие монеты:
+              span 3 
+        .coins-gallery
+          .item
+            img(src="images/moneta.png") 
+            a.description(href="") Ефимок с признаком 1655 г.
+          .item
+            img(src="images/moneta-2.png") 
+            a.description(href="") 2 рубля. Для дворцового обихода. Тираж - 8712.
+          .item
+            img(src="images/moneta-3.png")
+            a.description(href="") Полтина 1705 г.
+          .item
+            img(src="images/moneta-4.png")
+            a.description(href="") 5 копеек 1727 г. КД.
+          .item
+            img(src="images/moneta.png")
+            a.description(href="") Ефимок с признаком 1655 г.
+          .item
+            img(src="images/moneta-2.png") 
+            a.description(href="") 2 рубля. Для дворцового обихода. Тираж - 8712.
+          .item
+            img(src="images/moneta-3.png")
+            a.description(href="") Полтина 1705 г.
+          .item
+            img(src="images/moneta-4.png")
+           p.description 5 копеек 1727 г. КД.
+        .more-button
+          a(href="") и еще 51
+      hr
+      p.title.title-news Новости 
+      .news-container
+        .item
+          p.title-inner Аукцион №7
+          p.text
+            |Откроется 21 июля.
+            br
+            |Идёт приём лотов, который завершится 10 июля. Успейте сдать свои монеты!
+            br
+            |По вопросам обращайтесь по телефонам:
+            br
+            | +7 (495) 644-74-64, или пишите на почту
+        .item
+          p.title-inner Редкая монета на Аукционе №6 
+          p.text 
+            |18.05.2015 На Аукционе №6, на торги будет выставлена редкая монета - "Пенязь" князя Витовта, 
+            |чеканки Смоленского княжества(ок. 1396-1399)! 
+        .item
+          p.title-inner Редкая монета на Аукцион №4 
+          p.text 
+            |05.06.2014 На Аукционе №170, на торги будет выставлена редкая монета - 
+            |Копейка 1854 года с вензелем Александра II c экспертным заключением ГИМ (Ильин - 40 р., Петров - 50 р. Биткин - R3)! 
+      hr
+
+      p.title.title-end Прошедшие аукционы:
+      .auction-end
+        .info
+          .background
+            a(href="").title Аукцион №6
+            p Лотов: 
+              span 55
+            p Открытие: 
+              span 18.05.2015
+            p Закрытие: 
+              span 21.05.2015 
+            p Редкие монеты: 
+              span 3 
+        .coins-gallery
+          .item
+            img(src="images/moneta-5.png") 
+            a.description(href="") Рубль 1733 г.
+          .item
+            img(src="images/moneta-6.png") 
+            a.description(href="") Денга 1731 г.
+          .item
+            img(src="images/moneta-7.png")
+            a.description(href="") Рубль 1731 г.
+          .item
+            img(src="images/moneta-8.png")
+            a.description(href="") Копейка 1728 г.
+          .item
+            img(src="images/moneta-5.png") 
+            a.description(href="") Рубль 1733 г.
+          .item
+            img(src="images/moneta-6.png") 
+            a.description(href="") Денга 1731 г.
+          .item
+            img(src="images/moneta-7.png")
+            a.description(href="") Рубль 1731 г.
+          .item
+            img(src="images/moneta-8.png")
+            a.description(href="") Копейка 1728 г.
+        .more-button
+          a(href="") и еще 51
+
+      .auction-end-without-slider
+         .item
+            a.title(href="") Аукцион №4
+            p Лотов: 
+              span 55
+            p Открытие: 
+              span 18.05.2015
+            p Закрытие: 
+              span 21.05.2015 
+            p Редкие монеты: 
+              span 3 
+          .item
+            a.title(href="") Аукцион №3
+            p Лотов: 
+              span 55
+            p Открытие: 
+              span 18.05.2015
+            p Закрытие: 
+              span 21.05.2015 
+            p Редкие монеты: 
+              span 3 
+          .item
+            a.title(href="") Аукцион №2
+            p Лотов: 
+              span 55
+            p Открытие: 
+              span 18.05.2015
+            p Закрытие: 
+              span 21.05.2015 
+            p Редкие монеты: 
+              span 3 
+          .item
+            a.title(href="") Аукцион №1
+            p Лотов: 
+              span 55
+            p Открытие: 
+              span 18.05.2015
+            p Закрытие: 
+              span 21.05.2015 
+            p Редкие монеты: 
+              span 3 
+      p.title.title-last Последние поступления в интернет-магазине:
+      .online-shop
+        .item
+          img(src="images/dvemoneti.png")
+          p.title 1/2 копейки 1927 г.
+          p.text 1/2 копейки 1927 г. Медь. Вес-1,60 г.<br> Сохранность -XF. Федоркин №2(20...
+          .price Цена: 800 руб.
+          a.more(href="") подробнее
+        .item
+          img(src="images/dvemoneti-2.png")
+          p.title 2 рубля 1994 г. "И.Репин". ММД.
+          p.text Серебро 500 пробы. Вес(химически<br>чистый металл) 7,78 г. Сохранность...
+          .price Оценка: 1 500 руб.
+          a.more(href="") подробнее
+        .item
+          img(src="images/dvemoneti-3.png")
+          p.title Копейка 1705 г.
+          p.text Копейка 1705 г. МД. Медь. Вес - 7.71 г.<br> Сохранность - VF. Уездников №2274
+          .price Оценка: 2 400 руб.
+          a.more(href="") подробнее
+
+  include modules/_static-text.jade  
+  include modules/_footer.jade

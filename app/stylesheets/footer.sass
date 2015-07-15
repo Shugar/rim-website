@@ -1,0 +1,53 @@
+@import 'settings'
+@import 'bourbon/bourbon'
+
+
+.footer
+  height: 88px
+  position: relative
+  font-family: $calibri
+  .line-3
+    position: absolute
+    bottom: 45px
+    width: 100%
+    z-index: 20
+    height: 50px
+    background: url('../images/line-3.png') no-repeat 50% 45%
+    background-size: cover
+  .footer-inner
+    background: #282828
+    z-index: 50
+    height: 100%
+    position: relative
+    overflow: auto
+    @include clearfix
+    ul
+      display: block
+      text-align: center
+      margin-top: 17px
+      letter-spacing: 0.050px
+      color: #fff
+      li
+        display: inline-block
+        font-weight: 200
+        border-right: 2px $orange solid
+        padding: 0 26px 0 22px
+        font-size: 13px
+        &:last-child
+          border-right: none
+    .left, .right 
+      margin-top: 20px
+      font-size: 14px
+      letter-spacing: 0.15px
+      display: inline-block
+      color: $orange
+      vertical-align:  top
+    .left
+      float: left
+    .right
+      float: right
+      a 
+        color: $orange
+        &:hover
+          border-bottom: 1px #fff solid
+          color: #fff
