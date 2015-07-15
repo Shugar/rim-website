@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script>
+    require('initialize');
+    
+  </script>
+</head>
+<body>
+  <div class="header">
+    <div class="login">
+      <div class="container">
+        <div class="left">
+          <p class="title">Вход в Личный кабинет</p>
+        </div>
+        <div class="right">
+          <form>
+            <label>Логин
+              <input type="text">
+            </label>
+            <label>Пароль
+              <input type="text"><a href="#">Восстановить пароль</a>
+            </label>
+            <button>Вход <img src="images/strelka.png"></button>
+          </form>
+          <p class="close">Закрыть</p>
+        </div>
+      </div>
+    </div>
+    <div class="header-inner">
+      <div class="menu">
+        <div class="container">
+          <div class="time">
+            <p>20 мая 2015 / 12:04:51</p>
+          </div>
+          <div class="menu-inner">
+            <ul>
+              <li> <img src="images/user.png"><a href="registration.html">Регистрация</a></li>
+              <li><img src="images/key.png"><span class="lk">Личный кабинет</span></li>
+              <li> <img src="images/korzina.png"><a href="">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="main-header">
+        <div class="container">
+          <div class="left"> 
+            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          </div>
+          <div class="right"> 
+            <div class="info">
+              <p class="number">8 (495) 644 74 64</p>
+              <p class="email">info@trerim.ru</p>
+            </div>
+            <nav><a href="home.html" class="home">Главная</a>
+              <select onchange="document.location=this.options[this.selectedIndex].value" class="auction">
+                <option disabled selected>Аукционы</option>
+                <option value="archive.html">Архив</option>
+              </select>
+              <select class="about">
+                <option disabled selected>Об интернет-аукционе</option>
+                <option value="opt2_1"><a href="">Новости</a></option>
+                <option value="opt2_2"><a href="">Оплата и доставка</a></option>
+                <option value="opt2_3"><a href="">Правила</a></option>
+              </select><a href="" class="contacts">Контакты</a>
+              <select class="store">
+                <option disabled selected>Магазин</option>
+                <option value="opt3_1"><a href="">Правила</a></option>
+              </select>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="line-2"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <p class="title">Текущие аукционы:</p>
+      <div class="auction-now">
+        <p class="title">Аукцион №6</p>
+        <p>Лотов:<span>55</span></p>
+        <p>Открытие: <span>18.05.2015</span></p>
+        <p>Закрытие: <span>21.05.2015 </span></p>
+        <p>Редкие монеты:<span>3 </span></p>
+        <div class="coins-gallery">
+          <div class="item"><img src="images/moneta.png">
+            <p class="description">Ефимок с признаком 1655 г.</p>
+          </div>
+          <div class="item"><img src="images/moneta-2.png">
+            <p class="description">2 рубля. Для дворцового обихода. Тираж - 8712.</p>
+          </div>
+          <div class="item"><img src="images/moneta-3.png">
+            <p class="description">Полтина 1705 г.</p>
+          </div>
+          <div class="item"><img src="images/moneta-4.png">
+            <p class="description">5 копеек 1727 г. КД.</p>
+          </div>
+          <div class="item"><img src="images/moneta.png">
+            <p class="description">Ефимок с признаком 1655 г.</p>
+          </div>
+          <div class="item"><img src="images/moneta-2.png">
+            <p class="description">2 рубля. Для дворцового обихода. Тираж - 8712.</p>
+          </div>
+          <div class="item"><img src="images/moneta-3.png">
+            <p class="description">Полтина 1705 г.</p>
+          </div>
+          <div class="item"><img src="images/moneta-4.png">
+            <p class="description">5 копеек 1727 г. КД.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="static-text">
+    <div class="container">
+      <p>Нумизматические интернет-аукционы в настоящее время обретают все большую популярность как площадки, где можно купить или продать монеты из драгоценных металлов. Интернет-аукцион удобен ввиду его дистанционности — пользователям необязательно присутствовать лично при проведении торгов. К тому же довольно часто на нумизматических интернет-аукционах выставляются действительно интересные монеты, которые желал бы получить любой серьезный коллекционер.</p>
+      <p>Основным приоритетом интернет-аукциона «Аргентум» являются честные сделки купли-продажи монет. На нашем аукционе покупатели платят именно ту сумму, которую планировали заплатить за интересующий лот, а продавцы зарабатывают столько, сколько стоят предлагаемые ими монеты.Торги на нумизматическом интернет-аукционе «Аргентум» проводятся раз в две недели, минимальный шаг торгов составляет всего два процента, участники могут также воспользоваться системой автоматических ставок.</p>
+      <p>Администрация аукциона тщательно следит за порядочностью всех участников торгов. Наш аукцион первым в России начал использовать при регистрации подтверждение личности через мобильный телефон.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="line-3"></div>
+    <div class="footer-inner">
+      <div class="container">
+        <ul>
+          <li>Адрес: г.Москва, ул. Тверская, д.1, офис №1</li>
+          <li>Телефон: 8 (495) 644 74 64</li>
+          <li>E-mail: info@trerim.ru</li>
+        </ul>
+        <div class="left">
+          <p>© ООО"Третий Рим"-Нумизматический интернет-аукцион</p>
+        </div>
+        <div class="right">Разработка сайта: <a href="">Mi studio</a></div>
+      </div>
+    </div>
+  </div>
+</body>
