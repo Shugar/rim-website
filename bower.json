@@ -1,11 +1,10 @@
 {
-  "name": "brunch-for-static",
+  "name": "brunch-for-homeless",
   "version": "0.0.0",
   "authors": [
-    "molefrog <molefrog@gmail.com>",
-    "flywithme <boris@adimov.ru>"
+    "molefrog <molefrog@gmail.com>"
   ],
-  "description": "Brunch skeleton for fast prototyping static pages",
+  "description": "Brunch skeleton for homeless guys",
   "license": "MIT",
   "private": true,
   "ignore": [
@@ -16,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
-    "slick.js": "~1.5.5"
+    "jquery": "~2.1.4",
+    "slick-carousel": "~1.5.6"
   }
 }

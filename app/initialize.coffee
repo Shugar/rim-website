@@ -1,44 +1,32 @@
-# Write your code here!
+$(document).ready ->
 
-$ ->
-  console.log "You are awesome!"
-$ ->
-  $(".slider1").slick(
-    centerPadding: '60px',
-    centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
+  $('.login').hide()
+
+  $('.close').click ->
+    $('.login').hide()
+
+  $('.lk').click ->
+    $('.login').show()
+
+  $('.coins-gallery').slick(
+      dots: false
+      arrows: false
+      infinite: true
+      # autoplay: true
+      # autoplaySpeed: 2000
+      speed: 1500
+      slidesToShow: 4
+      variableWidth: true
+      swipe: 0
     )
-  $(".slider2").slick(
-    centerPadding: '60px',
-    centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    )
-  
-  $(".login").hide()
-  $(".popupOk").hide()
-  $(".popupErr").hide()
-  
-  $(".close").click( ->
-    $(".login").hide())
-  
-  $(".personalArea").click( ->
-    $(".login").show())
-  
-  $(".closeOk").click( ->
-    $(".popupOk").hide())
-  
-  $(".closeErr").click( ->
-    $(".popupErr").hide())
 
-
-
-
-
-
-
-
-
+  timeOut = null
+  timeOut1 = null
+  x = setInterval ->
+    timeOut = setTimeout ->
+      $($('.coins-gallery')[0]).slick 'slickNext'
+    , Math.random()*4000
+    timeOut1 = setTimeout ->
+      $($('.coins-gallery')[1]).slick 'slickNext'
+    , Math.random()*6000
+  , 2500

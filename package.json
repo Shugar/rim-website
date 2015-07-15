@@ -1,9 +1,9 @@
 {
-  "name": "brunch-for-static",
+  "name": "brunch-for-homeless",
   "version": "0.0.0",
   "repository": "none",
   "readme": "README.md",
-  "description": "Brunch for fast prototyping static pages",
+  "description": "Brunch skeleton for homeless guys, who are ready to make landing pages for food",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Are you kidding?\""
@@ -11,11 +11,12 @@
   "keywords": [
     "brunch",
     "skeleton",
-    "static",
-    "jade",
-    "stylus"
+    "homeless",
+    "food",
+    "landing",
+    "workforfood"
   ],
-  "author": "adimov",
+  "author": "molefrog",
   "license": "MIT",
   "devDependencies": {
     "clean-css-brunch": "~1.7.1",
@@ -29,6 +30,6 @@
     "jaded-brunch": "~1.7.11"
   },
   "dependencies": {
-    "brunch": "^1.7.19"
+    "sass-brunch": "^1.8.3"
   }
 }

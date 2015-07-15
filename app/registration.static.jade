@@ -1,141 +1,118 @@
 doctype html
 head
   meta(name="viewport" content="width=device-width")
+
   link(rel="stylesheet" href="stylesheets/app.css")
-  link(rel="stylesheet" href="stylesheets/slick.css")
-  meta(charset="utf-8")
-  title Регистрация | Третий Рим
 
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
-  script(src="javascripts/slick.min.js")
-
 
   script.
     require('initialize');
-    require('main');
-
 
 body
-  .login
+  include modules/_header.jade 
+  .content
     .container
-      h1 Вход в Личный кабинет
-      form.form1(action="" name="login")
-        h2.txt1 Логин
-        input.name(type="text" name="name")
-        h2.txt2 Пароль
-        input.password(type="password" name="pas")
-        input.button(type="submit" name="log" value="Вход")
-        img.strelka(src="images/strelka.png")
-      a(href="" class="recovery") Восстановить пароль
-      p.close Закрыть
-  .header
-    .navigationOne
-      .container
-        .date
-        nav
-          .imageReg 
-          a.registration(href="registration.html") Регистрация
-          .imagePers
-          a.personalArea Личный кабинет
-          .imageTrash
-          a.trash(href="") Корзина
-    .container
-      
-      .navigationTwo
-        .cont
-        a(href="index.html") 
-          .logo
-        nav
-          a.home(href="index.html") Главная
-          select.auction(onchange="document.location=this.options[this.selectedIndex].value")
-            option(disabled selected) Аукционы
-            option(value="archive.html") Архив
-          select.about
-            option(disabled selected) Об интернет аукционе
-            option(value="opt2_1")
-              a(href="") Новости
-            option(value="opt2_2")
-              a(href="") Оплата и доставка
-            option(value="opt2_3")
-              a(href="") Правила
-          a.contacts(href="") Контакты
-          select.store
-            option(disabled selected) Магазин
-            option(value="opt3_1")
-              a(href="") Правила
-.block1Reg
-  .container
-    h2 Регистрация нового участника
-    p Пожалуйста, заполняйте форму реальными данными, так как эти данные проверяются при активации и нужны при отправке Вам выигранных лотов по<br>почте или курьерской службой. Правильно выбирайте регион!<br>Если Вам требуется доставка 1-м классом или ЕМС-службой, то к сумме лотов (с комиссией аукциона 10%) добавляется стоимость пересылки.
-    p.txt ВНИМАНИЕ! Поля отмеченные звездочкой (*) являются обязательными для заполнения
-    form(ation="" name="registration")
-      p.nam Ф.И.О.*- - - - - - - - - - - - 
-      input.name(type="text" name="regName")
-      p.mail E-mail* - - - - - - - - - - - -
-      input.email(type="text" name="regEmail")
-      p.region Регион*- - - - - - - - - - - - 
-      select(name="regRegion")
-        option(selected disabled) Выберите регион
-      
-      p.city Город* - - - - - - - - - - - - 
-      input.Regcity(type="text" name="regName")
-      p.street Улица* - - - - - - - - - - - -
-      input.Regstreet(type="text" name="regStreet")
-      p.house Дом*- - - - - - - - - - - - - -
-      input.Reghouse(type="text" name="regHouse")
-      p.housing Корпус/строение- - - - -
-      input.Reghousing(type="text" name="regHousing")
-      p.room Квартира/офис - - - - - -
-      input.Regroom(type="text" name="regRoom")
-      p.post Почтовый индекс*- - - -
-      input.Regpost(type="text" name="regPost")
-      p.phone Телефон*- - - - - - - - - - -
-      input.Regnumb(type="text" name="regNumber")
-      p.log Логин* - - - - - - - - - - - - -
-      input.Reglog(type="text" name="regLogin")
-      p.pas Пароль*- - - - - - - - - - - -
-      input.Regpas(type="text" name="regPassword")
-      p.pasag Еще раз* - - - - - - - - - - -
-      input.Regpasrep(type="text" name="regPasswordRepeat")
-      input.regAgree(type="checkbox" name="agree")
-      p.know *Я ознакомился (-лась) с 
-      a(href="") "Правила участия в торгах интернет-аукциона"
-      input.button(type="submit" name="reg" value="Зарегестрироваться")
-    p.ps После регистраци письмо с подтверждением активации аккаунта будет выслано на Ваш e-mail.<br>Если у Вас возникли проблемы с регистрацие - звоните: 8(495)644 74 64
-    p.txt1 Ф.И.О. скрыты для других участников
-    p.txt2 правильно выбирайте регион
-    p.txt3 (село,поселок,деревня, и тд)
-    p.txt4 формат: +7(999)1234567, без пробелов и с круглыми скобками
-    p.txt5 отображается во всех действиях на аукционах
-    p.txt6 не менее 8 символов, должен содержать буквы (латинские и цифры)
+      p.title Регистрация нового участника 
+      .info-reg
+        p.bolder Пожалуйста, заполняйте форму реальными данными, так как эти данные проверяются при активации и нужны при отправке Вам выигранных лотов по почте или курьерской службой. Правильно выбирайте регион!
+        p Если Вам требуется доставка 1-м классом или ЕМС-службой, то к сумме лотов (с комиссией аукциона 10%) добавляется стоимость пересылки.
+        p.italic 
+          |ВНИМАНИЕ! Поля отмеченные звездочкой (
+          span *
+          |) являются обязательными для заполнения.
+      form
+        label
+          .text
+            span Ф. И. О.
+            span.red * 
+            span.lines - - - - - - - - - - - -
+          input(type="text")
+        label
+          .text 
+            span E-mail
+            span.red * 
+            span.lines - - - - - - - - - - - - -
+          input(type="text")
+        label
+          .text
+            span Регион
+            span.red *
+            span.lines - - - - - - - - - - - -
+          select
+            - for (var i=0;i<10;i++)
+              option Выберите регион
+           
+        label 
+          .text
+            span Город
+            span.red *
+            span.lines - - - - - - - - - - - - -
+          input(type="text")
+        label
+          .text 
+            span Улица
+            span.red * 
+            span.lines - - - - - - - - - - - - -
+          input(type="text")
+        label 
+          .text
+            span Дом
+            span.red * 
+            span.lines - - - - - - - - - - - - - -
+          input.little(type="text")
+        label
+          .text 
+            span Корпус / строение  
+            span.lines - - - - 
+          input.little(type="text")
+        label 
+          .text
+            span Квартира/офис 
+            span.lines - - - - - - -
+          input.little(type="text")
+        label 
+          .text
+            span Почтовый индекс
+            span.red * 
+            span.lines- - - -  
+          input.little(type="text")
+        label 
+          .text
+            span Телефон
+            span.red * 
+            span.lines - - - - - - - - - - - 
+          input(type="text")
+        label 
+          .text
+            span Логин
+            span.red * 
+            span.lines- - - - - - - - - - - - - 
+          input(type="text")
+        label 
+          .text
+            span Пероль
+            span.red * 
+            span.lines- - - - - - - - - - - - 
+          input(type="text")
+        label 
+          .text
+            span Еще раз
+            span.red * 
+            span.lines - - - - - - - - - - - 
+          input(type="text")
+        label 
+          span Я ознакомился  (-лась) с “
+          a(href="#").rules Правила участия в торгах интернет-аукциона
+          span ”
+          span.red *
+          input(type="checkbox").checkbox
+        button.submit Зарегестрироваться
+      p 
+        |После регистрации письмо с подтверждением активации аккаунта будет выслано на Ваш e-mail. 
+        br
+        |Если у Вас возникли проблемы с регистрацией - звоните: 8 (495) 644 74 64
 
-
-.block2
-  .container
-    p Нумизматические интернет-аукционы в настоящее время обретают все большую популярность как площадки, где можно купить или продать монеты из драгоценных металлов. Интернет-аукцион удобен ввиду его дистанционности — пользователям необязательно присутствовать лично при проведении торгов. К тому же довольно часто на нумизматических интернет-аукционах выставляются действительно интересные монеты, которые желал бы получить любой серьезный коллекционер.
-    p Основным приоритетом интернет-аукциона «Аргентум» являются честные сделки купли-продажи монет. На нашем аукционе покупатели платят именно ту сумму, которую планировали заплатить за интересующий лот, а продавцы зарабатывают столько, сколько стоят предлагаемые ими монеты.Торги на нумизматическом интернет-аукционе «Аргентум» проводятся раз в две недели, минимальный шаг торгов составляет всего два процента, участники могут также воспользоваться системой автоматических ставок.
-    p Администрация аукциона тщательно следит за порядочностью всех участников торгов. Наш аукцион первым в России начал использовать при регистрации подтверждение личности через мобильный телефон.
-
-
-.footer
-  .container
-    table
-      tr 
-        td Адрес: г.Москва, ул. Тверская, д.1 офис №1
-        td Телефон: 8(495)644 74 64
-        td E-mail: info@trerim.ru
-    p © ООО"Третий Рим"-Нумизматический интернет-аукцион
-    a(href="") Разработка сайта: Mi studio
-.popupOk
-.content
-  p Благодарим Вас за регистрацию!
-  p.closeOk Х
-  p.closeOk(class="txt1") Закрыть
-.popupErr
-.content
-  p Не все поля заполнены!
-  p.closeErr Х
-  p.closeErr(class="txt1") Закрыть
-
-
+  include modules/_static-text.jade  
+  include modules/_footer.jade

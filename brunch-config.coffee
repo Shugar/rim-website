@@ -15,5 +15,3 @@ exports.config =
     jaded:
       jade:
         pretty: yes
-
-

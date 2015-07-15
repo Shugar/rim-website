@@ -1,0 +1,202 @@
+@import 'settings'
+
+.header
+  font-family: $calibri
+  width: 100%
+  .login
+    overflow: auto
+    height: 154px
+    background: url('../images/loginbg.jpg')
+    .left, .right
+      vertical-align: top
+      display: inline-block
+      .title
+        font-size: 22px 
+        color: #fff
+        margin-top: 33px
+        letter-spacing: 0.3px
+      .close
+        position: absolute
+        top: 24px
+        right: 0px
+        font-size: 16px
+        color: $orange
+        cursor: pointer
+        line-height: 13px
+        border-bottom: 1px #dd8c00 solid 
+        &:hover
+          color: #fff
+          border-bottom: 1px #fff solid 
+      form
+        margin-top: 36px
+        margin-left: 70px
+        label
+          margin-left: 30px 
+          margin-top: 1px
+          color: #858585
+          display: inline-block
+          letter-spacing: 1.1px 
+          font-weight: 100
+          font-size: 16px
+          vertical-align: top
+          &:first-child
+            margin-left: 0px
+          input
+            margin-top: 4px
+            display: block
+            outline: none
+            width: 192px
+            padding: 8px
+            border-radius: 4px
+            border: 0
+          a
+            text-decoration:  none
+            color: $orange
+            border-bottom: 1px #dd8c00 solid 
+            font-size: 16px
+            letter-spacing: 0
+            line-height: 55px
+            &:hover
+              color: #fff
+              border-bottom: 1px #fff solid 
+        button 
+          margin-left: 27px
+          margin-top: 20px
+          width: 90px
+          height: 30px
+          border-radius: 100px
+          border: 0
+          font-size: 15px
+          padding: 0px 0px 1px 4px
+          outline: none
+          @include linear-gradient(#fedda4, $orange)
+          &:active
+            @include linear-gradient($orange, #fedda4)
+          img 
+            vertical-align: top
+            padding-left: 5px
+            padding-top: 1px
+  .header-inner
+    position: relative
+    .menu
+      height: 50px
+      background: #282828
+      border-top: 1px #777 solid
+      z-index: 50
+      position: relative
+      .time
+        color: #fff
+        display: inline-block
+        margin-top: 18px
+        margin-left: 3px
+        letter-spacing: 0.35px
+      .menu-inner
+        margin-top: 12px
+        display: inline-block
+        float: right
+        ul
+          li
+            margin-left: 49px
+            letter-spacing: 0.2px
+            display: inline-block
+            img
+              vertical-align:  bottom
+              padding-right: 11px
+            a, span  
+              color: $orange
+              border-bottom: 1px $orange solid
+              text-decoration: none 
+              cursor: pointer
+              &:hover
+                border-bottom: 1px #fff solid
+                color: #fff
+    .line
+      background: url('../images/line.png') no-repeat center
+      background-size: cover
+      height: 50px
+      position: absolute
+      top: 10px
+      width: 100%
+    .main-header
+      overflow: auto
+      height: 195px
+      background: url('../images/bgheader.png') no-repeat center
+      background-size: cover
+      border-bottom: 3px $orange solid
+      .right
+        float: right
+      .left, .right
+        display: inline-block
+        vertical-align:  top
+
+        .logo
+          margin-top: 25px
+
+        .info
+          position: absolute
+          right: 0
+          top: 50px
+          .number, .email
+            text-align: right
+          .number
+            font-size: 30px 
+            @include linear-gradient(#000, #fedda4)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+          .email
+            font-size: 20px
+            @include linear-gradient(#fedda4, #000)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        nav 
+          margin-top: 130px
+          font-size: 17px
+          a
+            padding: 6px 10px 6px 10px
+            border: 1px solid #d1d1d1
+            text-decoration: none
+            color: black
+            border-radius: 4px
+            &:hover
+              border: 1px solid #dd8c00
+          select
+            background: transparent
+            border-radius: 4px
+            border: 1px solid #d1d1d1
+            outline: none
+            cursor: pointer
+            &:hover
+              border: 1px solid #dd8c00
+          .home 
+            padding: 6px 12px 6px 10px
+          .auction
+            width: 125px
+            letter-spacing: 1px
+            height: 30px
+            font-size: 15px
+            margin-left: 5px
+          .about
+            height: 30px
+            font-size: 15px
+            width: 220px
+            margin-left: 6px
+            font-size: 14px
+            letter-spacing: 1px
+          .contacts
+            margin-left: 12px
+            padding: 5px 15px 6px 9px
+          .store
+            padding: 5px 15px 5px 9px
+            letter-spacing: 1px
+            height: 30px
+            font-size: 15px
+            margin-left: 8px
+    .line-2
+      position: absolute
+      top: 223px
+      width: 100%
+      z-index: -20
+      height: 50px
+      background: url('../images/line-2.png') no-repeat 50% 100%
+      background-size: cover
+  
